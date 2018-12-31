@@ -7,7 +7,7 @@ import IndexPage from '@/components/IndexPage'
 import LoginPage from '@/components/LoginPage'
 
 import MovieIndexPage from '@/components/movie/MovieIndexPage'
-import MovieShowPage from '@/components/movie/MovieShowPage'
+import MovieShowPage from '@/components/movie/MovieShowpage'
 
 
 export default new Router({
