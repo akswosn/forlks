@@ -24,6 +24,19 @@ router.get('/find/:name',  function(req, res, next) {
         res.json(posts);
     });
 });
+router.post('/add',  function(req, res, next) {
+    console.log('aa', req);
+    var addPost = new Posts({
+        title : req.body.title,
+        contents: req.body.contents,
+    });
+    addPost.save(function (err) {
+        if (err) {
+            return next({code:500, msg:err});
+        }
+        res.send({code:200, msg:'Post added [ title: '+addPost.title+' ]'})
+    })
+});
 
 
 module.exports = router;

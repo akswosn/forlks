@@ -24,6 +24,7 @@ var styles = [
   , 'line-height: 40px'
   , 'text-align: center'
   , 'font-weight: bold'
+  , 'width : 100%'
 ].join(';');
 
 console.log('%c[akswosn@gmail.com] forlks project vuejs + express + mongodb '  , styles);

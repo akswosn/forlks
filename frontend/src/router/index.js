@@ -9,6 +9,7 @@ import LoginPage from '@/components/LoginPage'
 import MovieIndexPage from '@/components/movie/MovieIndexPage'
 import MovieShowPage from '@/components/movie/MovieShowpage'
 
+import MongoTest from '@/components/MongoTest'
 
 export default new Router({
   mode: 'history',
@@ -32,6 +33,11 @@ export default new Router({
       path: '/movie/:id',
       name: 'MovieShowPage',
       component: MovieShowPage
+    },
+    {
+      path: '/mongoTest',
+      name: 'MongoTest',
+      component: MongoTest
     }
   ]
 })
