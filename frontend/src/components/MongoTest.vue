@@ -36,7 +36,7 @@
           </div>
     </b-modal>
     <!--end -->
-    <b-alert  ref="alertMsg" :variant="alert.variant" dismissible fade :show="alert.isVisible" @dismissed="alert.isVisible=false">
+    <b-alert  ref="alertMsg" :variant="alert.variant" dismissible fade :show="alert.isVisible" @dismissed="alert.isVisible=false" style="position:absolute;top:0;width:100%">
       {{alert.msg}}
     </b-alert>
 </div>
